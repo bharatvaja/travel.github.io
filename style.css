@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kumbh+Sans&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    text-transform:cspitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style-type:none;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior:smooth;
+    text-decoration:none;
+}
+
+.navbar{
+    box-shadow: 1px 3px 5px white;
+    background-color: #f9f9f9;
+}
+#logo{
+    font-size:36px;
+    font-weight: 700;
+    color:black;
+    text-shadow:0px 1px 0px black;
+    margin-top:5px;
+    
+}
+#logo span{
+    color:#ffa500;
+}
+.navbar-toggler span{
+    color:#ffa500;
+}
+.navbar-nav{
+    margin-left:20px;
+}
+.nav-item .nav-link{
+    font-size:16px;
+    font-weight:700;
+    color:black;
+    letter-spacing: 1px;
+    border-radius:3px;
+    transition:0.5s ease;
+}
+.nav-item .nav-link:hover{
+background-color:#ffa500;
+color:white;
+}
+#navbar form button{
+    background-color:3ffa500;
+    color:white;
+    border:none;
+}
+.home{
+    width:100%;
+    height:90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(img/home.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.home .content{
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+     text-align: center;
+}
+.home .content h5{
+   color:white;
+   font-weight:500px;
+   font-size:38px;
+   text-shadow:0px 1px 1px black;
+}
+.home .content h1{
+    font-size:70px;
+    font-weight:600px;
+    color:white;
+    text-shadow:0px 1px 1px black;
+    margin-top:5px;
+}
+.changecontent::after{
+    content: '';
+    color:#ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{
+        content:"France";
+    }
+    10%{
+        content:"spance";
+    }20%{
+        content:"United States";
+    }30%{
+        content:"china";
+    }40%{
+        content:"india";
+    }
+    50%{
+        content:"Pakistan";
+    }60%{
+        content:"Italy";
+    }70%{
+        content:"Turkey";
+    }80%{
+        content:"Mexico";
+    }
+    90%{
+        content:"Germany";
+    }100%{
+        content:"United kingdom";
+    }
+}
+.home .content p{
+    font-size:15px;
+    font-weight:600px;
+    color:white;
+    margin-bottom:30px;
+    margin-top:5px;
+    text-shadow:0px 1px 1px black;
+ }
+ .home .content a{
+    background-color:white;
+    color:black;
+    padding:10px;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    transition:0.5s;
+    text-decoration:none;
+ } 
+ .home .content a:hover{
+    color:white;
+    background-color:black;
+    padding:10px;
+    letter-spacing:1px;
+    font-weight:600;
+    border-radius:10px;
+ }
+ @media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+ }
+ @media (max-width:450px){
+    .home .content h5{
+        font-size:25px;
+    }
+    .home .content h1{
+        font-size:38px;
+    }
+    .home .content p{
+        font-size:13px;
+    }
+ }
+ .book{
+    background-color:#f9f9f9;
+    padding:50px;
+ }
+ .main-text h1{
+    text-align:center;
+    font-weight:600;
+    text-shadow:0px 1px 1px 1px black;
+ }
+ .main-text h1 span{
+    color:#ffa500;
+ }
+ .book .card{
+border-radius: 10px;
+box-shadow: 0px 5px 5px -6px black;
+ }
+ .book .row{
+    margin-top:30px;
+ }
+ .book form input{
+    padding:10px;
+    margin:10px;
+
+    border:none;
+    color:black;
+    outline:none;
+    font-size:15px;
+    box-shadow: 0px 5px 5px -6px black;
+    
+ }
+ .book form textarea{
+border: none;
+border-radius: 10px;
+resize: none;
+height:200px;
+box-shadow: 0px 5px 5px -6px black;
+
+}
+.book form .submit{
+    background-color: #ffa500;
+    color: white;
+    margin-top:10px;
+    transition: 0.5s;
+    font-size:16px;
+    font-weight:550;
+    border-radius:20px;
+    width:160px;
+
+}
+.book form .submit:hover{
+    width:170px;
+    transition: 0.7s;
+}
+@media (max-width:765px){
+    .book{
+        padding:0px;
+    }
+    .main-text h1{
+        padding:20px;
+    }
+ }
+ .packges .card{
+    border-radius: 5px;
+    border:none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+ }
+ .packges .card img{
+    border-radius: 5px;
+    
+ }
+ .packges .card .card-body{
+    background:transparent;
+}
+.packges .card .card-body h3{
+    font-size:25px;
+    font-weight: 600;    
+}
+.packges .card .card-body p{
+    font-size:15px;
+}
+.checked{
+    color:#ffa500;
+
+}
+.star ion-icon{
+        font-size:15px;
+
+}
+.packges .card .card-body h6{
+    font-size:20px;
+}
+.packges .card .card-body a{
+    padding:10px;
+    text-decoration:none;
+    background-color: #ffa500;
+    color: #f9f9f9;
+    border-radius: 10px;
+
+}
+.service{
+    margin-top:50px;
+    background-color:#fff;
+
+}
+.service .card{
+    cursor: pointer;
+    border:none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.service .card:hover{
+    background-color: #ffa500;
+    color:white;
+    transition: all 0.6s linear;
+    box-shadow:rgba(0,0,0,0.2) 0px 3px 2px 3px;
+}
+.service .card:hover i{
+    color:white;
+    background-color:transparent;
+   
+    transition: all 0.6s linear;
+
+}
+.service .card i{
+    color:#ffa500;
+    margin-top:10px;
+    padding:10px;
+    font-size:3.2rem;
+    align-items:center;
+    text-align:center;
+}
+.service .card-body h3{
+    font-size:25px;
+    color:black;
+    align-items:center;
+    text-align:center;
+    font-weight:bold;
+     
+}
+.service .card-body p{
+    font-size:15px;
+    align-items:center;
+    text-align:center;
+}
+#about{
+    background-color: #ffa500;
+    color: white;
+    margin-top:10px;
+    transition: 0.5s;
+    padding:10px;
+    text-decoration:none;
+    letter-spacing: 2px;
+    font-size:16px;
+    font-weight:550;
+    border-radius:10px;
+    width:160px;
+
+}
+#about:hover{
+    border-radius:23px;
+    width:170px;
+    transition: 0.7s;
+}
+.icon i{
+    border-radius:50%;
+    background-color:#ffa500;
+    color:#fff;
+    align-items:center;
+    padding:10px;
+    margin:10px;
+    margin-top:20px;
+}
+
+.icon i:hover{
+    color:black;
+    background-color:white;
+    border-radius:40%;
+}
+   .dark{
+    position: fixed;
+    top:13%;
+    color:white;
+    border-radius:50%;
+    background-color:black;
+    left:95%;
+    border-radius:20px;
+    padding:10px;
+   }
+   .dark:hover{
+    background-color: #f9f9f9;
+color: black;
+font-size:14px;
+box-shadow: 1px 3px 6px black;
+transition: all 0.8s linear;
+font-weight:700;
+justify-content:center;
+text-align:center;
+align-items: center;
+border-radius: 30px;
+align-items:center;
+}
+   .mode{
+    background-color:black;
+    color:white;
+    transition: all 0.8s linear;
+     }
+   .serdark{
+    color:black;
+
+   }
+   #whatsapp{
+    position: fixed;
+    bottom:5%;
+    left:90%;
+   }
+   #whatsapp{
+    background-color: #ffa500;
+    color: #f9f9f9;
+    font-size:14px;
+    display: flex;
+    width:100px;
+    height:35px;
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+    list-style-type:none;
+    text-decoration:none;
+    border-radius: 30px;
+    align-items:center;
+}
+#whatsapp:hover{
+background-color: #f9f9f9;
+color: black;
+font-size:14px;
+display: flex;
+box-shadow: 1px 3px 6px black;
+width:100px;
+transition: all 0.8s linear;
+font-weight:700;
+height:35px;
+justify-content:center;
+text-align:center;
+align-items: center;
+border-radius: 30px;
+align-items:center;
+}
+#top{
+    position: fixed;
+    bottom:5%;
+    color:white;
+    border-radius:50%;
+    background-color:black;
+    left:97%;
+    border-radius:20px;
+    padding:10px;
+    scroll-behavior: smooth;
+     
+}
+#top:hover{
+background-color: #f9f9f9;
+color: black;
+font-size:14px;
+box-shadow: 1px 3px 6px black;
+transition: all 0.8s linear;
+font-weight:700;
+justify-content:center;
+text-align:center;
+align-items: center;
+border-radius: 30px;
+align-items:center;
+}
+.last p{
+    position:absolute;
+    transform:translate(50%);
+    align-items:center;
+    text-align:center;
+    font-weight: bold;
+}
